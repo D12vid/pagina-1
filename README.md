@@ -1,4 +1,4 @@
-# Proyecto página 1
+# Proyecto pagina web 1
 
 ```sh
 npm create astro@latest -- --template basics
