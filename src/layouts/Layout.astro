@@ -1,22 +1,25 @@
 
-
-
-
-
-
-
 <!doctype html>
 <html lang="en">
 	<head>
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>TivaDesign</title>
+
 	</head>
 	<body>
-		
-	 Aqui va el menu de navegacion 
+		<header>
+			<nav> 
+				<a href="/">inicio</a>
+				<a href="/whoweare">Quienes Somos?</a>
+				<a href="/servicies">Servicios</a>
+				<a href="/customers">Clientes</a>
+			  <a href="/contact">Contacto</a>
+			</nav>
+		</header>
 
 	 <!-- la dejaremos asi -->
 		<slot />
@@ -24,16 +27,6 @@
 
 	 Aqui va el footer
 
-
-
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
