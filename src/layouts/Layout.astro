@@ -1,4 +1,6 @@
-
+---
+import Navbar from "../components/Navbar.astro"
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -11,23 +13,8 @@
 
 	</head>
 	<body>
-		<header>
-			<nav> 
-				<img src="" alt="">
 
-				<ul>
-				
-				<li><a href="/">Inicio</a></li>
-				<li><a href="/whoweare">Quiénes Somos?</a></li>
-				<li><a href="/servicies">Servicios</a></li>
-				<li><a href="/customers">Clientes</a></li>
-				<li><a href="/contact">Contacto</a></li>
-		
-		
-				</ul>
-				
-			</nav>
-		</header>
+		<Navbar />
 
 	 <!-- la dejaremos asi -->
 		<slot />
