@@ -1,4 +1,4 @@
-<div>
+<div class="servicies-section">
     <div>
         <h3>Servicios</h3>
         <ul>
@@ -10,15 +10,29 @@
             <li>- Diseño de packaging</li>
             <li>- Diseño de Cover art</li>
         </ul>
+        <div>
+            <a href="/contact">
+                <button>Contactar</button>
+            </a>
+        </div>
     </div>
 
+    
     <div>
-        <a href="/contact">
-            <button>Contactar</button>
-        </a>
-    </div>
-
-    <div>
-        <img src="IPHONEMOCKUP.png" alt="">
+        <img src="IPHONEMOCKUP.png" alt="" />
     </div>
 </div>
+
+<style>
+    .servicies-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+</style>
