@@ -3,20 +3,103 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div>
-    <div>
-        <Icon name="xpress" width="50" height="50" color="black" />
-        <Icon name="ccsfood" width="50" height="50" color="black" />
+    <div class="icons">
         <Icon name="centralpagos" width="50" height="50" color="black" />
+        <Icon name="ccsfood" width="50" height="50" color="black" />
+        <Icon name="xpress" width="50" height="50" color="black" />
         <Icon name="crosswind" width="50" height="50" color="black" />
+        <Icon name="bokdos" width="50" height="50" color="black" />
     </div>
 
-    <div>
+    <div class="whoarewe">
         <h2>¿Quiénes Somos?</h2>
         <p>
             Somos una agencia especializada en la creación de marcas sólidas e
-            identidades visuales impactantes. Especializado en branding, social
-            media y diseño publicitario, con un enfoque estratégico para ayudar
+            identidades visuales impactantes. <span>Especializado en branding, social
+            media y diseño publicitario,</span> con un enfoque estratégico para ayudar
             a empresas a conectar con sus audiencias.
         </p>
     </div>
 </div>
+
+<style>
+    .icons {
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
+        height: 500px; /* Altura fija para el contenedor */
+        width: 100%;
+        max-width: 1920px;
+
+    }
+    .icons {
+        display: flex;
+        width: 100%;
+        max-width: 1920px;
+        flex-direction: row;
+        padding: 10px 20px; /* Espacio interno alrededor del grupo de iconos */
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para resaltar los iconos */
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        margin: 0px 20px; /* Centra el contenedor horizontalmente */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
+        align-items: center;
+        height: 150px; /* Altura fija para el contenedor */
+
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        line-height: 1.0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        max-width: 900px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin: 10px 10px; /* Espacio horizontal para evitar que el texto toque los bordes */
+        text-align: justify; /* Justifica el texto para una mejor presentación */
+
+
+    }
+
+    p span {
+        font-weight: 800;
+
+    }
+
+
+
+.whoarewe {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para resaltar los iconos */
+    border-radius: 0px 00px 50px 50px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
+    padding: 60px 300px;
+
+}
+
+</style>

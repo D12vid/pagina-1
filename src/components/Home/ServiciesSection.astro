@@ -1,5 +1,5 @@
-<div class="servicies-section">
-    <div>
+<div class="servicies.1" >
+    <div class="servicies-section" >
         <h3>Servicios</h3>
         <ul>
             <li>- Branding</li>
@@ -10,7 +10,7 @@
             <li>- Diseño de packaging</li>
             <li>- Diseño de Cover art</li>
         </ul>
-        <div>
+        <div/>
             <a href="/contact">
                 <button>Contactar</button>
             </a>
@@ -24,15 +24,64 @@
 </div>
 
 <style>
-    .servicies-section {
+
+    .servicies.1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-
+        justify-content:left
     }
+    .servicies-section {
+        padding: 60px 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: row;
+        text-align: left;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 100px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        color: rgb(0, 0, 0);
+       
+    }
+    h3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        line-height: 1.0;
+        margin-bottom: 20px;
+    }
+    ul {
+        font-size: 20px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        line-height: 1.3;
+        margin-bottom: 0px;
+    }
+
+    button {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 255, 255, 0.0);
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
     img {
-        width: 50%;
-        object-fit: cover;
-    }
+        display: flex;
+        align-items: end;
+        text-align: end;
+        height: auto;
+        margin-top: 0px;
+        width: 400px;
+        
 
+    }
 </style>

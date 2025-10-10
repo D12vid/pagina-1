@@ -1,16 +1,80 @@
 <footer>
-		
-		<icons name=tiva.svg width=50 height=50 />
-		<p>0412-7593226</p>
-		<p>@tivadesign_</p>
-		<p>tivadesignve@gmail.com</p>
+	<div>
+		<icons name="tiva.svg" width="50" height="50"></icons>
+		<div class="contact">	
+			<p>0412-7593226</p>
+			<p>@tivadesign_</p>
+			<p>tivadesignve@gmail.com</p>
+		</div>
+
 		<p>Valencia, Venezuela</p>
 		<p>© 2024 TivaDesign. All rights reserved.</p>
 
-	<p >¿Listo para llevar tu marca al siguiente nivel?</p>
-<a href="/contact">
-    <button>Contactanos</button>
-    </a>
-
-
+		<div class="hbutton"
+			<p>¿Listo para llevar tu marca al siguiente nivel?</p>
+			<a href="/contact">
+				<button>Contactanos</button>
+			</a>
+		</div>
+		</a>
+	</div>
 </footer>
+
+<style>
+
+	div {
+		color: white;
+		text-align: center;
+		padding: 20px 10px;
+		margin-top: 10px;
+
+	}
+	.contact {
+
+		margin: 5px 0;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 0.5;
+
+	}
+
+	p {
+		margin: 5px 0;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 0.9;
+
+	}
+
+	.hbutton {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		font-weight: 600;
+		font-size: 20px;
+
+	}
+
+	button {
+		padding-top: 20px;
+		margin-top: 15px;
+		padding: 10px 20px;
+		background-color: #ffffff;
+		color: rgb(0, 0, 0);
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+		font-size: 16px;
+		font-weight: 700;
+		border: #000000 solid 1px;
+	}
+	button:hover {
+		background-color: #000000;
+		color: #ffffff;
+		border: #ffffff solid 1px;
+		transition: 0.3s;
+	}
+</style>
