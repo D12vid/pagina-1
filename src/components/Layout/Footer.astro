@@ -1,6 +1,6 @@
 <footer>
 	<div>
-		<icons name="tiva.svg" width="50" height="50"></icons>
+		<icons name="tiva.svg" width="50" height="50"> </icons>
 		<div class="contact">	
 			<p>0412-7593226</p>
 			<p>@tivadesign_</p>
@@ -10,7 +10,7 @@
 		<p>Valencia, Venezuela</p>
 		<p>© 2024 TivaDesign. All rights reserved.</p>
 
-		<div class="hbutton"
+		<div class="button" >
 			<p>¿Listo para llevar tu marca al siguiente nivel?</p>
 			<a href="/contact">
 				<button>Contactanos</button>
@@ -22,19 +22,25 @@
 
 <style>
 
+	icons {
+		filter: invert(1);
+		margin-bottom: 10px;
+		
+	}
 	div {
 		color: white;
 		text-align: center;
 		padding: 20px 10px;
 		margin-top: 10px;
+		max-width: 100%;
 
 	}
 	.contact {
 
 		margin: 5px 0;
 		font-size: 16px;
-		font-weight: 700;
 		line-height: 0.5;
+
 
 	}
 
@@ -46,7 +52,7 @@
 
 	}
 
-	.hbutton {
+	.button {
 		margin-top: 15px;
 		display: flex;
 		flex-direction: column;
@@ -55,6 +61,15 @@
 		gap: 10px;
 		font-weight: 600;
 		font-size: 20px;
+
+	}
+
+	.button p {
+		margin top: 20px;
+		margin-bottom: 0px;
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 1;
 
 	}
 

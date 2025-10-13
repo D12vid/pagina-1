@@ -2,51 +2,137 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<div>
-    <div>
+<div class="servicios">
+    <div class="titulo">
         <h4>Servicios Profesionales</h4>
         <p>
-            En Tiva Design, no solo ofrecemos servicios profesionales de Diseño
+            En <span>Tiva Design</span>, no solo ofrecemos servicios profesionales de Diseño
             Gráfico, Branding y Contenido para tus redes, sino que también
-            estamos aquí para ayudarte a dar vida a tus ideas y construir el
-            camino hacia el éxito.
+            estamos aquí para ayudarte a dar vida a tus ideas y construir <span> Tu
+            camino hacia el éxito.</span>
         </p>
     </div>
-    <div>
-        <Icon name="brush" width="50" height="50" color="black" />
-        <h3>Branding</h3>
-        <p>
-            Creamos identidades visuales sólidas y memorables que reflejan la
-            esencia de tu marca, ayudándote a destacar en un mercado
-            competitivo.
-        </p>
-        <a href="/contact"> <button>Contactanos</button> </a>
 
-       <Icon name="colorpaleta" width="50" height="50" color="black"/>
-        <h3>Social Media</h3>
-        <p>
-            Ofrecemos soluciones creativas y personalizadas para todas tus
-            necesidades de diseño, desde logotipos hasta materiales
-            promocionales.
-        </p>
-        <a href="/contact"> <button>Contactanos</button> </a>
+    <div class="contenedores">
+        <div class ="servicio1">
+            <Icon name="brush" width="50" height="50" color="black" />
+            <h3>Branding</h3>
+            <p>
+                Creamos identidades visuales sólidas y memorables que reflejan
+                la esencia de tu marca, ayudándote a destacar en un mercado
+                competitivo.
+            </p>
+            <a href="/contact"> <button>Contactanos</button> </a>
+        </div>
 
-        <Icon name="puntero" width="50" height="50" color="black"/>
-        <h3>Diseño Publicitario</h3>
-        <p>
-            Desarrollamos estrategias de contenido efectivas para redes sociales
-            que aumentan tu visibilidad y engagement, conectando con tu
-            audiencia de manera auténtica.
-        </p>
-        <a href="/contact"> <button>Contactanos</button> </a>
+        <div class ="servicio2">
+            <Icon name="colorpaleta" width="50" height="50" color="black" />
+            <h3>Social Media</h3>
+            <p>
+                Ofrecemos soluciones creativas y personalizadas para todas tus
+                necesidades de diseño, desde logotipos hasta materiales
+                promocionales.
+            </p>
+            <a href="/contact"> <button>Contactanos</button> </a>
+        </div>
 
-        <Icon name="video" width="50" height="50" color="black"/>
-        <h3>Edición de Videos</h3>
-        <p>
-            Transformamos tus ideas en videos impactantes y profesionales que
-            capturan la atención de tu audiencia y comunican tu mensaje de
-            manera efectiva.
-        </p>
-        <a href="/contact"> <button>Contactanos</button> </a>
+        <div class ="servicio3">
+            <Icon name="puntero" width="50" height="50" color="black" />
+            <h3>Diseño Publicitario</h3>
+            <p>
+                Desarrollamos estrategias de contenido efectivas para redes
+                sociales que aumentan tu visibilidad y engagement, conectando
+                con tu audiencia de manera auténtica.
+            </p>
+            <a href="/contact"> <button>Contactanos</button> </a>
+        </div>
+
+        <div class ="servicio4">
+            <Icon name="video" width="50" height="50" color="black" />
+            <h3>Edición de Videos</h3>
+            <p>
+                Transformamos tus ideas en videos impactantes y profesionales
+                que capturan la atención de tu audiencia y comunican tu mensaje
+                de manera efectiva.
+            </p>
+            <a href="/contact"> <button>Contactanos</button> </a>
+        </div>
     </div>
-</div>
+
+    <style>
+        .servicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .titulo h4 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            color: white;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .titulo p {
+            font-size: 20px;
+            color: white;
+            max-width: 800px;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            line-height: 1.4;
+
+        }
+        .titulo p span {
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .contenedores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .contenedores div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contenedores div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .contenedores h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .contenedores p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .contenedores button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contenedores button:hover {
+            background-color: #0056b3;
+        } 
