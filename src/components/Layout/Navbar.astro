@@ -4,9 +4,9 @@ import { Icon } from "astro-icon/components";
 
 <header>
 	<nav>
-		<Icon name="tiva" width="40" height="40" color="black" />
+		<Icon name="tiva" width="40" height="40" color="white" />
 
-		<ul>
+		<ul class="list">
 			<li><a href="/">Inicio</a></li>
 			<li><a href="/servicies">Servicios</a></li>
 			<li><a href="/customers">Clientes</a></li>
@@ -39,5 +39,15 @@ import { Icon } from "astro-icon/components";
 		font-size: 18px;
 		color: rgb(255, 255, 255);
 	}
+	.list {
+		position: relative;
+		color: white;
+		text-decoration: none;
+		transition: 2s ease;
 
+	}
+	.list :hover {
+		color:chartreuse
+	}
+	
 </style>

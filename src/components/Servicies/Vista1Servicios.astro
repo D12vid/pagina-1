@@ -6,54 +6,51 @@ import { Icon } from "astro-icon/components";
     <div class="titulo">
         <h4>Servicios Profesionales</h4>
         <p>
-            En <span>Tiva Design</span>, no solo ofrecemos servicios profesionales de Diseño
-            Gráfico, Branding y Contenido para tus redes, sino que también
-            estamos aquí para ayudarte a dar vida a tus ideas y construir <span> Tu
-            camino hacia el éxito.</span>
+            En <span>Tiva Design</span>, no solo ofrecemos servicios
+            profesionales de Diseño Gráfico, Branding y Contenido para tus
+            redes, sino que también estamos aquí para ayudarte a dar vida a tus
+            ideas y construir <span> Tu camino hacia el éxito.</span>
         </p>
     </div>
 
     <div class="contenedores">
-        <div class ="servicio1">
-            <Icon name="brush" width="50" height="50" color="black" />
+        <div class="servicio1">
+            <Icon name="brush" width="50" height="50" />
             <h3>Branding</h3>
             <p>
-                Creamos identidades visuales sólidas y memorables que reflejan
+                Creamos <span>visuales sólidas y memorables</span>  que reflejan
                 la esencia de tu marca, ayudándote a destacar en un mercado
                 competitivo.
             </p>
             <a href="/contact"> <button>Contactanos</button> </a>
         </div>
 
-        <div class ="servicio2">
-            <Icon name="colorpaleta" width="50" height="50" color="black" />
+        <div class="servicio2">  
+            <Icon name="colorpaleta" width="50" height="50" />
             <h3>Social Media</h3>
             <p>
-                Ofrecemos soluciones creativas y personalizadas para todas tus
-                necesidades de diseño, desde logotipos hasta materiales
-                promocionales.
+                Ofrecemos <span>soluciones creativas y personalizadas</span> para todas tus necesidades 
+                de diseño, desde logotipos hasta contenido visual.
             </p>
             <a href="/contact"> <button>Contactanos</button> </a>
         </div>
 
-        <div class ="servicio3">
-            <Icon name="puntero" width="50" height="50" color="black" />
+        <div class="servicio3">
+            <Icon name="puntero" width="50" height="50" />
             <h3>Diseño Publicitario</h3>
             <p>
                 Desarrollamos estrategias de contenido efectivas para redes
-                sociales que aumentan tu visibilidad y engagement, conectando
-                con tu audiencia de manera auténtica.
+                sociales que <span>aumentan tu visibilidad y engagement,</span> conectando.
             </p>
             <a href="/contact"> <button>Contactanos</button> </a>
         </div>
 
-        <div class ="servicio4">
-            <Icon name="video" width="50" height="50" color="black" />
+        <div class="servicio4"> 
+            <Icon name="video" width="50" height="50" />
             <h3>Edición de Videos</h3>
             <p>
-                Transformamos tus ideas en videos impactantes y profesionales
-                que capturan la atención de tu audiencia y comunican tu mensaje
-                de manera efectiva.
+                Transformamos tus ideas en videos <span>impactantes y profesionales
+                que capturan la atención</span> de tu audiencia y comunican tu mensaje.
             </p>
             <a href="/contact"> <button>Contactanos</button> </a>
         </div>
@@ -73,19 +70,24 @@ import { Icon } from "astro-icon/components";
         .titulo h4 {
             font-size: 60px;
             margin-bottom: 10px;
-            color: white;
+            color: rgb(0, 0, 0);
             font-style: normal;
             font-weight: 700;
+
+        }
+        .titulo h4:hover{
+            color: blueviolet;
+
+
         }
 
         .titulo p {
             font-size: 20px;
-            color: white;
+            color: rgb(0, 0, 0);
             max-width: 800px;
             margin-bottom: 50px;
             margin-top: 30px;
             line-height: 1.4;
-
         }
         .titulo p span {
             font-weight: 700;
@@ -98,41 +100,91 @@ import { Icon } from "astro-icon/components";
             gap: 20px;
             width: 100%;
             max-width: 1200px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            justify-items: center;
         }
 
         .contenedores div {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
+            background-color: hsla(0, 0%, 100%, 0.5);
+            border-radius: 20px;
+            border: 1px double black;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
         }
 
         .contenedores div:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            box-shadow:
+                0 20px 30px rgb(123, 0, 255, 1),
+                0 10px 10px rgba(0, 42, 255, 0.8),
+                0 0px 40px rgba(30, 0, 255, 0.6);
         }
 
         .contenedores h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+
         }
 
         .contenedores p {
-            font-size: 1rem;
             margin-bottom: 15px;
+            margin-right: 15px;
+            margin-left: 15px;
+            text-align: center;
+            padding: 10px;
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 100%;
+            text-indent: 0px;
+            word-spacing: -0.5px;
+            letter-spacing: -0.3px;
+
         }
 
         .contenedores button {
-            background-color: #007bff;
+            background-color: oklch(55.8% 0.288 302.321);
+            border-color: 1px solid black;
             color: white;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-bottom: 20px;
         }
 
         .contenedores button:hover {
-            background-color: #0056b3;
-        } 
+            background-color: #000000;
+        }
+
+        .servicio1,
+        .servicio2,
+        .servicio3,
+        .servicio4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            height: 100%;
+        }
+
+        span {
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        footer {
+            
+
+
+        }
+
+    </style>
+</div>
