@@ -6,7 +6,7 @@ import { Icon } from "astro-icon/components";
     <div class="titulo">
         <h4>Contacto</h4>
         <p>
-            ¿Listo para llevar tu marca al siguiente nivel? En Tiva Design,
+            <span>¿Listo para llevar tu marca al siguiente nivel?</span> En Tiva Design,
             estamos aquí para ayudarte a transformar tus ideas en realidad. Ya
             sea que necesites un nuevo logotipo, una estrategia de contenido
             para tus redes sociales o cualquier otro servicio de diseño, nuestro
@@ -16,22 +16,22 @@ import { Icon } from "astro-icon/components";
 
     <div class="botones">
         <div class="B1">
-            <Icon name="phone" width="50" height="50" color="black"/>
+            <Icon name="phone" width="50" height="50" color="white"/>
             <h3>Teléfono</h3>
             <a href="tel:+584127593266"> <button>Enviar Whatsapp</button> </a>
         </div>
+        <div class="B3">
+            <Icon name="instagram" width="50" height="50" color="white" />
+            <h3>instagram</h3>
+            <a href="https://www.instagram.com/tivadesign_/" target="_blank" rel="noopener noreferrer">
+                <button>Visitar Instagram</button>
+            </a>
+        </div>
         <div class="B2">
-            <Icon name="email" width="50" height="50" color="black" />
+            <Icon name="email" width="50" height="50" color="white" />
             <h3>Email</h3>
             <a href="mailto:tivadesignve@gmail.com">
                 <button>Enviar Email</button>
-            </a>
-        </div>
-        <div class="B3">
-            <Icon name="instagram" width="50" height="50" color="black" />
-            <h3>instagram</h3>
-            <a href="https://www.instagram.com/tivadesign_/" target="_blank" rel="noopener noreferrer">
-            <button>Visitar Instagram</button>
             </a>
         </div>
        
@@ -40,7 +40,107 @@ import { Icon } from "astro-icon/components";
 
 
 <style>
-    
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .titulo h4 {
+        font-size: 60px;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+            font-style: normal;
+            font-weight: 700;
+    }
+    .titulo h4:hover {
+        color: chartreuse;
+    }
+
+    .titulo p {
+        font-size: 20px;
+            color: rgb(255, 255, 255);
+            max-width: 800px;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            line-height: 1.4;
+    }
+    .titulo p span {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .botones > div {
+        background-color:  rgba(0, 0,0,0.5);
+        border-radius: 20px 20px 20px 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 220px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .botones > div:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        box-shadow:0 5px 30px #b7ff00,
+                0 5px 10px #c7ff3a,
+                0 0px 20px #ffffff;
+    }
+
+    .botones h3 {
+        margin: 1rem 0 0.5rem 0;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .botones button {
+        background: linear-gradient(90deg, #ffffff 0%, #d5d1d0 100%);
+        color: #000000;
+        border: 1px solid #ccc;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+        box-shadow: 0 2px 8px rgba(154, 140, 152, 0.08);
+    }
+
+    .botones button:hover {
+        background: linear-gradient(90deg, #ffffff 0%, #b7ff00 120%);
+        box-shadow: 0 4px 16px rgba(154, 140, 152, 0.15);
+    }
+
+    @media (max-width: 900px) {
+        .botones {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .botones > div {
+            width: 90%;
+            min-width: unset;
+        }
+    }
 
 
 
