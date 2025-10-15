@@ -16,20 +16,23 @@ import { Icon } from "astro-icon/components";
 </header>
 
 <style>
+	header {
+		padding: 30px 60px;
+		display: flex;
+		justify-content: center;
+	}
 	nav {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 70px;
-		padding-top: 20px;
-		padding-bottom: 20px;
 		background-color: rgba(0, 0, 0, 0.5);
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
-		border-radius: 30px 30px 30px 30px;
-		margin: 30px 450px;
+		border-radius: 30px;
+		width: min-content;
 		border: 1px solid #ccc;
 		padding: 10px 40px;
-
+		margin: 0 auto;
 	}
 	ul {
 		list-style: none;
